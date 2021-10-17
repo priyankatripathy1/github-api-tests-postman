@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "87e50c41-5653-4e91-b0ee-c85c5d6a11ec",
+		"name": "Github",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Repos for authtenticated user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user/repos",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Repositories for an authtenticate user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/repos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"repos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "GitHub.com"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 17 Oct 2021 17:42:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cd47c9066c45fa38077fdb4b4b1c4fb847f7f156fcc33ef1aea6f9217678b82b\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "github-authentication-token-expiration",
+							"value": "2021-11-16 18:38:17 UTC"
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4988"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1634495338"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "12"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "E3AF:7963:800BA7:11F7936:616C6092"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 417357582,\n        \"node_id\": \"R_kgDOGOBfDg\",\n        \"name\": \"postman-collections\",\n        \"full_name\": \"priyankatripathy1/postman-collections\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"priyankatripathy1\",\n            \"id\": 91846263,\n            \"node_id\": \"U_kgDOBXl2dw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/91846263?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/priyankatripathy1\",\n            \"html_url\": \"https://github.com/priyankatripathy1\",\n            \"followers_url\": \"https://api.github.com/users/priyankatripathy1/followers\",\n            \"following_url\": \"https://api.github.com/users/priyankatripathy1/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/priyankatripathy1/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/priyankatripathy1/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/priyankatripathy1/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/priyankatripathy1/orgs\",\n            \"repos_url\": \"https://api.github.com/users/priyankatripathy1/repos\",\n            \"events_url\": \"https://api.github.com/users/priyankatripathy1/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/priyankatripathy1/received_events\",\n            \"type\": \"User\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/priyankatripathy1/postman-collections\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections\",\n        \"forks_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/forks\",\n        \"keys_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/events\",\n        \"assignees_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/merges\",\n        \"archive_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/deployments\",\n        \"created_at\": \"2021-10-15T03:30:10Z\",\n        \"updated_at\": \"2021-10-15T03:30:13Z\",\n        \"pushed_at\": \"2021-10-15T03:30:10Z\",\n        \"git_url\": \"git://github.com/priyankatripathy1/postman-collections.git\",\n        \"ssh_url\": \"git@github.com:priyankatripathy1/postman-collections.git\",\n        \"clone_url\": \"https://github.com/priyankatripathy1/postman-collections.git\",\n        \"svn_url\": \"https://github.com/priyankatripathy1/postman-collections\",\n        \"homepage\": null,\n        \"size\": 0,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": null,\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get Repos for authtenticated user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/repos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"repos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "GitHub.com"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 17 Oct 2021 17:55:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cd47c9066c45fa38077fdb4b4b1c4fb847f7f156fcc33ef1aea6f9217678b82b\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "public_repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "github-authentication-token-expiration",
+							"value": "2021-11-16 18:38:17 UTC"
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4978"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1634495338"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "22"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "E425:0E8F:1614F86:3008CEB:616C6378"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 417357582,\n        \"node_id\": \"R_kgDOGOBfDg\",\n        \"name\": \"postman-collections\",\n        \"full_name\": \"priyankatripathy1/postman-collections\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"priyankatripathy1\",\n            \"id\": 91846263,\n            \"node_id\": \"U_kgDOBXl2dw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/91846263?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/priyankatripathy1\",\n            \"html_url\": \"https://github.com/priyankatripathy1\",\n            \"followers_url\": \"https://api.github.com/users/priyankatripathy1/followers\",\n            \"following_url\": \"https://api.github.com/users/priyankatripathy1/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/priyankatripathy1/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/priyankatripathy1/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/priyankatripathy1/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/priyankatripathy1/orgs\",\n            \"repos_url\": \"https://api.github.com/users/priyankatripathy1/repos\",\n            \"events_url\": \"https://api.github.com/users/priyankatripathy1/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/priyankatripathy1/received_events\",\n            \"type\": \"User\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/priyankatripathy1/postman-collections\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections\",\n        \"forks_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/forks\",\n        \"keys_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/events\",\n        \"assignees_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/merges\",\n        \"archive_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/deployments\",\n        \"created_at\": \"2021-10-15T03:30:10Z\",\n        \"updated_at\": \"2021-10-15T03:30:13Z\",\n        \"pushed_at\": \"2021-10-15T03:30:10Z\",\n        \"git_url\": \"git://github.com/priyankatripathy1/postman-collections.git\",\n        \"ssh_url\": \"git@github.com:priyankatripathy1/postman-collections.git\",\n        \"clone_url\": \"https://github.com/priyankatripathy1/postman-collections.git\",\n        \"svn_url\": \"https://github.com/priyankatripathy1/postman-collections\",\n        \"homepage\": null,\n        \"size\": 0,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": null,\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get Repos for authtenticated user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/repos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"repos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "GitHub.com"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 17 Oct 2021 17:43:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cd47c9066c45fa38077fdb4b4b1c4fb847f7f156fcc33ef1aea6f9217678b82b\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "github-authentication-token-expiration",
+							"value": "2021-11-16 18:38:17 UTC"
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4987"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1634495338"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "13"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "E3AF:7963:80187F:11F8FBF:616C60BB"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 417357582,\n        \"node_id\": \"R_kgDOGOBfDg\",\n        \"name\": \"postman-collections\",\n        \"full_name\": \"priyankatripathy1/postman-collections\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"priyankatripathy1\",\n            \"id\": 91846263,\n            \"node_id\": \"U_kgDOBXl2dw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/91846263?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/priyankatripathy1\",\n            \"html_url\": \"https://github.com/priyankatripathy1\",\n            \"followers_url\": \"https://api.github.com/users/priyankatripathy1/followers\",\n            \"following_url\": \"https://api.github.com/users/priyankatripathy1/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/priyankatripathy1/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/priyankatripathy1/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/priyankatripathy1/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/priyankatripathy1/orgs\",\n            \"repos_url\": \"https://api.github.com/users/priyankatripathy1/repos\",\n            \"events_url\": \"https://api.github.com/users/priyankatripathy1/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/priyankatripathy1/received_events\",\n            \"type\": \"User\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/priyankatripathy1/postman-collections\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections\",\n        \"forks_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/forks\",\n        \"keys_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/events\",\n        \"assignees_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/merges\",\n        \"archive_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/priyankatripathy1/postman-collections/deployments\",\n        \"created_at\": \"2021-10-15T03:30:10Z\",\n        \"updated_at\": \"2021-10-15T03:30:13Z\",\n        \"pushed_at\": \"2021-10-15T03:30:10Z\",\n        \"git_url\": \"git://github.com/priyankatripathy1/postman-collections.git\",\n        \"ssh_url\": \"git@github.com:priyankatripathy1/postman-collections.git\",\n        \"clone_url\": \"https://github.com/priyankatripathy1/postman-collections.git\",\n        \"svn_url\": \"https://github.com/priyankatripathy1/postman-collections\",\n        \"homepage\": null,\n        \"size\": 0,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": null,\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    }\n]"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{personal_access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.github.com"
+		}
+	]
+}
